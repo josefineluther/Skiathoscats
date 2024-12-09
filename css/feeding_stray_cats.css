@@ -1,0 +1,34 @@
+h1 {
+    padding-top: 90px;
+}
+
+hr {
+    width: 100%;
+}
+
+.images {
+    display: flex;
+}
+
+main p {
+    padding-top: 1em;
+}
+
+main img {
+    height: 450px;
+    object-fit: cover;
+}
+
+#feeding_cats {
+    list-style-type: square;
+}
+
+.pink {
+    color: #D60D47;
+    font-weight: bold;
+}
+
+.ingress {
+    margin-top: 1em;
+    font-weight: bold;
+}

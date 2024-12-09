@@ -1,0 +1,28 @@
+#image_and_info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 35px;
+}
+
+.back_to_search {
+    display: flex;
+    align-items: center;
+}
+
+#back_arrow {
+    display: flex;
+    align-items: center;
+    margin-right: 4px;
+}
+
+#breed_info_article {
+    padding-bottom: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    #image_and_info {
+        display: grid;
+        grid-template-columns: 1.7fr 2fr;
+        gap: 35px;
+    }
+}

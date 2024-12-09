@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Skiathos Cat Welfare Association is a non profit
+    organisation providing veterinary care and food
+    to the stray cats of Skiathos.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <title>SCWA</title>
+</head>
+
+<body>
+    <header>
+        <img id="header_image" src="images/cats_on_staircase.jpeg" alt="Cats on stairs">
+        <nav>
+            <a href="index.html"><img id="logo" src="images/logo.png" alt="Logo Skiathos Cat Welfare Association"></a>
+            <ul class="menu" id="desktop_menu">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li id="dropdown_btn">
+                    <a href="#"><span id="ways_to_help">Ways to help</span>
+                        <svg class="menu_arrow" xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#333333">
+                            <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                        </svg>
+                    </a>
+                    <ul id="dropdown_content">
+                        <li><a class="dropdown" href="#">Donations</a></li>
+                        <li><a class="dropdown" href="#">Volonteering</a></li>
+                        <li><a class="dropdown" href="#">Adoptions</a></li>
+                        <li>
+                            <a class="dropdown" href="feeding_stray_cats.html">
+                                Feeding stray-cats
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div id="menu_icon" onclick=showHamMenu()>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="65px" viewBox="0 -960 960 960" width="65px"
+                        fill="#333333">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg>
+                </a>
+            </div>
+            <ul class="menu" id="ham_menu">
+                <li onclick=hideHamMenu()><a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                            fill="#333333">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224
+                        224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a>
+                </li>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="#">Ways to help</a>
+                    <ul>
+                        <li><a class="dropdown" href="#">Donations</a></li>
+                        <li><a class="dropdown" href="#">Volonteering</a></li>
+                        <li><a class="dropdown" href="#">Adoptions</a></li>
+                        <li>
+                            <a class="dropdown" href="feeding_stray_cats.html">
+                                Feeding stray-cats
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="header_text">
+            <h1 id="h1_index">
+                SKIATHOS <span id="h1_small">Cat Welfare Association</span>
+            </h1>
+            <a href="#main">
+                <svg class="arrow" id="header_arrow" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1
+                    .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1
+                    .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4" />
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <main id="main">
+        <article>
+            <h2>The small charity doing big work</h2>
+            <p>
+                Skiathos Cat Welfare Association (SCWA), is a non profit
+                organisation providing veterinary care and food
+                to the stray cats of Skiathos. Everyday we feed around 300
+                cats in our shelter and around Skiathos.
+            </p>
+            <h3>
+                <a href="#">Read more about our work
+                    <span class="arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5
+                                0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5
+                                0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                        </svg>
+                    </span>
+                </a>
+            </h3>
+        </article>
+        <hr>
+        <article>
+            <h2>Ways to help</h2>
+            <p>
+                Are you interested in helping our cats? You can help through
+                donations, volonteering at our shelter or by adoption.
+                You can also help us with feeding stray-cats.
+                Read more about how to help below.
+            </p>
+            <div class="grid_container">
+                <div class="grid_items">
+                    <a href="#">
+                        <img src="images/cat_resting.jpg" alt="Resting cat">
+                        <h3>
+                            Donations
+                            <span class="arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                    class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146
+                                    5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0
+                                    .708l-3 3a.5.5 0 0 1-.708-.708L10.293
+                                    8.5H4.5A.5.5 0 0 1 4 8" />
+                                </svg>
+                            </span>
+                        </h3>
+                    </a>
+                </div>
+                <div class="grid_items">
+                    <a href="#">
+                        <img src="images/cat_with_human.jpeg" alt="Cat with human">
+                        <h3>
+                            Volonteering
+                            <span class="arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                    class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146
+                                    5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0
+                                    1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293
+                                    8.5H4.5A.5.5 0 0 1 4 8" />
+                                </svg>
+                            </span>
+                        </h3>
+                    </a>
+                </div>
+                <div class="grid_items">
+                    <a href="#">
+                        <img src="images/adopted_cat.jpeg" alt="Adopted cat">
+                        <h3>
+                            Adoptions
+                            <span class="arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                    class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146
+                                    5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0
+                                    .708l-3 3a.5.5 0 0 1-.708-.708L10.293
+                                    8.5H4.5A.5.5 0 0 1 4 8" />
+                                </svg>
+                            </span>
+                        </h3>
+                    </a>
+                </div>
+                <div class="grid_items">
+                    <a href="feeding_stray_cats.html">
+                        <img src="images/greece_flowers.jpeg" alt="Greece flowers">
+                        <h3>
+                            Feeding stray-cats
+                            <span class="arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                    class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146
+                                    5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0
+                                    .708l-3 3a.5.5 0 0 1-.708-.708L10.293
+                                    8.5H4.5A.5.5 0 0 1 4 8" />
+                                </svg>
+                            </span>
+                        </h3>
+                    </a>
+                </div>
+            </div>
+        </article>
+        <hr>
+        <article>
+            <h2>Learn about breeds</h2>
+            <p>
+                Don't know which breed to adopt or just want to learn more
+                about your fluffy friend?
+            </p>
+            <h3>
+                <a href="cat_breeds.html">Learn about different cat breeds
+                    <span class="arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5
+                                0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5
+                                0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                        </svg>
+                    </span>
+                </a>
+            </h3>
+        </article>
+        <hr>
+        <article>
+            <h2>Visit us</h2>
+            <p>You are more than welcome to come and say hi to our cats!</p>
+            <dl>
+                <dt><strong>Address</strong></dt>
+                <dd>Cat street 1</dd>
+                <dd>123 45 Skiathos</dd>
+            </dl>
+            <dl>
+                <dt><strong>Visiting hours</strong></dt>
+                <dd>Thursday and Saturday 12pm to 4pm.</dd>
+            </dl>
+            <p>
+                To book a visit you can send us an email at
+                <a href="skiathoscatwelfare@hotmail.com">
+                    skiathoscatwelfare@hotmail.com
+                </a>
+            </p>
+        </article>
+    </main>
+
+    <footer>
+        <div class="icons">
+            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+        </div>
+        <hr>
+        <p>
+            Logo and some text from
+            <a href="https://www.skiathos-cats.org">skiathos-cats.org</a>
+        </p>
+        <p>© 2024 Skiathos Cat Welfare Association</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

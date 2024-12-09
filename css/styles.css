@@ -1,0 +1,448 @@
+/* GENERAL */
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #EFEFEF;
+    margin: 0;
+}
+
+hr {
+    width: 95%;
+    color: #333333;
+}
+
+dl,
+ul {
+    list-style-type: none;
+}
+
+.arrow {
+    text-decoration: none;
+}
+
+.arrow svg {
+    vertical-align: middle;
+}
+
+main,
+footer {
+    padding: 0.5rem 0.5rem 4rem 0.5rem;
+}
+
+.menu .active {
+    color: #333333;
+}
+
+/* FONTS */
+
+h1,
+h2,
+h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: normal;
+}
+
+p,
+dl {
+    font-family: 'PT Serif', serif;
+    line-height: 1.75;
+    font-size: 1.1rem;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h1 span {
+    display: block;
+    margin-top: 11px;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+/* HEADER */
+
+#header_image {
+    width: 100%;
+    object-fit: cover;
+    transform: scaleX(-1);
+    height: 100vh;
+    min-height: 800px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+#logo {
+    padding: 0.5em;
+    max-width: 110px;
+}
+
+#header_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#h1_index {
+    color: #D60D47;
+    position: absolute;
+    top: 590px;
+    font-size: 3.7rem;
+    line-height: 3rem;
+    text-align: center;
+}
+
+#h1_small {
+    font-size: 1.65rem;
+}
+
+#header_arrow {
+    position: absolute;
+    top: 730px;
+    width: 50px;
+}
+
+header a {
+    color: #333333;
+    display: flex;
+    justify-content: center;
+}
+
+header a:hover {
+    color: #D60D47;
+}
+
+/* menu general */
+
+.menu_arrow {
+    font-size: 1.5em;
+    fill: #D60D47;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 0;
+    background-color: #EFEFEF;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #D60D47;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.25rem;
+}
+
+.menu a:hover,
+#dropdown_btn:hover .menu_arrow {
+    fill: #333333;
+    color: #333333;
+}
+
+#dropdown_btn:hover #ways_to_help {
+    color: #333333;
+}
+
+ul li .dropdown {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0.5em;
+}
+
+/* desktop menu */
+
+#desktop_menu {
+    display: none;
+    height: 70px;
+}
+
+/* dropdown menu */
+
+#dropdown_content {
+    display: none;
+    background-color: #EFEFEF;
+    position: absolute;
+    top: 70px;
+    padding: 0 1em 1em 1em;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+#dropdown_btn {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#dropdown_btn:hover #dropdown_content {
+    display: block;
+}
+
+/* hamburger menu */
+
+#menu_icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #EFEFEF;
+    height: 80px;
+    width: 80px;
+    padding: 4px;
+}
+
+#ham_menu {
+    flex-direction: column;
+    width: 100vw;
+    height: 470px;
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0.5em;
+}
+
+li ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+#ham_menu>li>a {
+    margin-bottom: 0.5em;
+}
+
+/* main */
+
+#main {
+    min-height: 60vh;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3em;
+}
+
+article a {
+    color: #D60D47;
+    text-decoration: none;
+}
+
+article a:hover {
+    color: #333333;
+}
+
+.grid_items:hover a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.grid_items:hover img {
+    opacity: 0.65;
+    transition: ease-out 0.3s;
+}
+
+article img {
+    margin-top: 2em;
+    width: 100%;
+}
+
+dd {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+
+/* footer */
+
+footer {
+    background-color: #333333;
+    margin-bottom: 0;
+}
+
+.icons img {
+    width: 3.5em;
+    margin-left: 2em;
+}
+
+.icons {
+    padding: 2.7em 0 2em 1em;
+}
+
+footer p {
+    color: #EFEFEF;
+    margin: 2em 3em;
+    font-size: 0.95rem;
+}
+
+footer a {
+    color: #EFEFEF;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #EFEFEF;
+}
+
+footer hr {
+    color: #EFEFEF;
+    margin: auto;
+    width: 95%;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    main,
+    footer {
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+
+    #menu_icon {
+        display: none;
+    }
+
+    #ham_menu {
+        display: none;
+    }
+
+    #desktop_menu {
+        display: flex;
+        width: 60vw;
+    }
+
+    .grid_container {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3em;
+    }
+
+    .grid_items img {
+        height: 400px;
+        object-fit: cover;
+    }
+
+    #h1_index {
+        font-size: 5em;
+        line-height: 3.5rem;
+        top: 530px;
+    }
+
+    #h1_small {
+        font-size: 2.1rem;
+    }
+
+    #header_arrow {
+        top: 715px;
+        width: 50px;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    p,
+    dl {
+        font-size: 1.2rem;
+    }
+
+    main h1 {
+        padding-top: 40px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    main,
+    footer {
+        padding-left: 10em;
+        padding-right: 10em;
+    }
+
+    #menu_icon {
+        display: none;
+    }
+
+    #ham_menu {
+        display: none;
+    }
+
+    #desktop_menu {
+        display: flex;
+        width: 45vw;
+    }
+
+    .grid_container {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3em;
+    }
+
+    .grid_items img {
+        height: 400px;
+        object-fit: cover;
+    }
+
+    #h1_index {
+        font-size: 5em;
+        line-height: 3.5rem;
+        top: 540px;
+    }
+
+    #h1_small {
+        font-size: 2.1rem;
+    }
+
+    #header_arrow {
+        top: 730px;
+        width: 50px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    p,
+    dl {
+        font-size: 1.2rem;
+    }
+
+    main h1 {
+        padding-top: 5px;
+    }
+
+}

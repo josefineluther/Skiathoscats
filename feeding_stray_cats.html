@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="We encourage you to feed the cats in
+    Skiathos, but be sure you do it in the right way. Here’s som tips and tricks.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/feeding_stray_cats.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>SCWA - Feeding stray-cats</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <img id="logo" src="images/logo.png"
+                alt="Logo Skiathos Cat Welfare Association">
+            </a>
+            <ul class="menu" id="desktop_menu">
+                <li><a href="index.html">Home</a></li>
+                <li id="dropdown_btn">
+                    <a href="#"><span id="ways_to_help">Ways to help</span>
+                        <svg class="menu_arrow" xmlns="http://www.w3.org/2000/svg"
+                            height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#333333"> <path d="M480-344 240-584l56-56 184
+                            184 184-184 56 56-240 240Z" />
+                        </svg>
+                    </a>
+                    <ul id="dropdown_content">
+                        <li><a class="dropdown" href="#">Donations</a></li>
+                        <li><a class="dropdown" href="#">Volonteering</a></li>
+                        <li><a class="dropdown" href="#">Adoptions</a></li>
+                        <li>
+                            <a class="dropdown active" href="feeding_stray_cats.html">
+                                Feeding stray-cats
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div id="menu_icon" onclick=showHamMenu()>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="65px"
+                        viewBox="0 -960 960 960" width="65px" fill="#333333"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg>
+                </a>
+            </div>
+            <ul class="menu" id="ham_menu">
+                <li onclick=hideHamMenu()>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40px"
+                            viewBox="0 -960 960 960"  width="40px" fill="#333333">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224
+                            224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg>
+                    </a>
+                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Ways to help</a>
+                    <ul>
+                        <li><a class="dropdown" href="#">Donations</a></li>
+                        <li><a class="dropdown" href="#">Volonteering</a></li>
+                        <li><a class="dropdown" href="#">Adoptions</a></li>
+                        <li>
+                            <a class="dropdown active" href="feeding_stray_cats.html">
+                                Feeding stray-cats
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <article>
+            <h1>FEEDING <br> STRAY-CATS</h1>
+            <hr>
+            <div>
+                <img class="grid_items" src="images/cat_eating.jpeg" alt="Cat eating">
+                <p class="ingress">
+                    Skiathos is full of cats that need food and water.
+                    We encourage you to feed the cats, but be sure you do
+                    it in the right way. Here’s som tips and tricks:
+                </p>
+                <ul id="feeding_cats">
+                    <li>
+                        <p>
+                            Try not to feed the stray-cats when you are eating at
+                            tavernas. <span class="pink">Feed the cats with dry
+                            cat-food away from the taverna.</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span class="pink">Use a plastic container to put
+                            the food in.</span> Wait for the cat to eat and remove
+                            the container. Leaving food on the ground, leaves the
+                            cats and those that feed them subject to complaints.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span class="pink">Provide water for the strays,</span>
+                            they suffer from lack of water as much as from
+                             lack of food.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Please <span class="pink">do not let cats enter your
+                            hotel room.</span> Remember not everybody likes cats
+                            and some people might be allergic.
+                        </p>
+                    </li>
+                </ul>
+                <img class="grid_items" src="images/tired_cat.jpeg" alt="Tired cat">
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="icons">
+            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+        </div>
+        <hr>
+        <p>
+            Logo and some text from
+            <a href="https://www.skiathos-cats.org">skiathos-cats.org</a>
+        </p>
+        <p>© 2024 Skiathos Cat Welfare Association</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

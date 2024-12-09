@@ -1,0 +1,40 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+#search {
+    font-size: 14px;
+    color: #333333;
+    border-style: none;
+    background-image: url("data:image/svg+xml,<svg viewBox='0 0 35 35' fill='%23333333' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0' clip-rule='evenodd'/></svg>");
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 10px 20px 10px 40px;
+}
+
+input::placeholder {
+    color: #333333;
+}
+
+input {
+    margin-top: 20px;
+    width: 30%;
+}
+
+#search_result {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.breed_image {
+    height: 280px;
+}
+
+article {
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+img:hover {
+    opacity: 0.65;
+    transition: ease-out 0.3s;
+}
