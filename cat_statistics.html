@@ -13,7 +13,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-        <title>SCWA - Learn about cat breeds</title>
+        <title>SCWA - Cat statistics</title>
     </head>
 
     <body>
@@ -85,26 +85,17 @@
 
         <main id="main">
             <article>
-                <h1>LEARN ABOUT <br> DIFFERENT CAT BREEDS</h1>
+                <h1>CAT <br> STATISTICS</h1>
                 <hr>
-                <p class="ingress">
-                    Search for a cat breed to read about their characteristics
-                </p>
-                <input id="search" type="text" placeholder="Search for a cat breed">
-            </article>
-            <article id="search_result">
-            </article>
-            <article>
+                <h2>Intelligence level of different cat breeds</h2>
+                <canvas id="cat_chart" style="width:100%;max-width:1000px"></canvas>
                 <h3 style="margin-top: 30px;">
-                    <a href="cat_statistics.html">Cat statistics
-                        <span class="arrow">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5
-                                    0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5
-                                    0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
-                            </svg>
-                        </span>
+                    <a href="cat_breeds.html" class="back_to_search">
+                        <span id="back_arrow" class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5" />
+                            </svg></span>Back to search page
                     </a>
                 </h3>
             </article>
@@ -122,6 +113,7 @@
             </p>
             <p>© 2024 Skiathos Cat Welfare Association</p>
         </footer>
-        <script src="js/index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="js/cat_statistics.js"></script>
 </body>
 </html>

@@ -13,7 +13,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-        <title>SCWA - Learn about cat breeds</title>
+        <title>VG uppgift</title>
     </head>
 
     <body>
@@ -85,28 +85,26 @@
 
         <main id="main">
             <article>
-                <h1>LEARN ABOUT <br> DIFFERENT CAT BREEDS</h1>
+                <h1>VG <br> UPPGIFT</h1>
                 <hr>
-                <p class="ingress">
-                    Search for a cat breed to read about their characteristics
-                </p>
-                <input id="search" type="text" placeholder="Search for a cat breed">
+                <form>
+                    <input id="id" type="text" placeholder="ID">
+                    <input id="city_name" type="text" placeholder="City">
+                    <input id="population" type="text" placeholder="Population">
+                    <select id="action">
+                        <option value="get">GET</option>
+                        <option value="post">POST</option>
+                        <option value="put">PUT</option>
+                        <option value="delete">DELETE</option>
+                    </select>
+                    <input type="submit" value="Send">
+                </form>
+                <form id="saved_text_form">
+                    <input id="text_box" type="text" style="margin-top: 100px;" placeholder="Write something fun">
+                    <input id="save_text" type="submit" value="Save">
+                </form>
             </article>
             <article id="search_result">
-            </article>
-            <article>
-                <h3 style="margin-top: 30px;">
-                    <a href="cat_statistics.html">Cat statistics
-                        <span class="arrow">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5
-                                    0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5
-                                    0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
-                            </svg>
-                        </span>
-                    </a>
-                </h3>
             </article>
         </main>
 
@@ -122,6 +120,6 @@
             </p>
             <p>© 2024 Skiathos Cat Welfare Association</p>
         </footer>
-        <script src="js/index.js"></script>
+        <script src="js/VG.js"></script>
 </body>
 </html>
